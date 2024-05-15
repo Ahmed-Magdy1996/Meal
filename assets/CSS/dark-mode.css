@@ -1,0 +1,36 @@
+/* Dark mode styles when checkbox is checked */
+#mode:checked ~ :root {
+    --primary-hue: 35;
+    --primary-lightness: 44%;
+    --primary-saturation: 72%;
+    --light-hue: 0;
+    --light-saturation: 0%;
+    --light-lightness: 9%;
+    --color-default: #fff;
+    --color-secondary: #fff;
+    --color-tertiary: #9f9f9f;
+    --color-light-grey: #252525;
+}
+
+/* Light mode styles when checkbox is not checked */
+#mode:not(:checked) ~ :root {
+    --primary-hue: 0;
+    --primary-lightness: 44%;
+    --primary-saturation: 84%;
+    --light-hue: 0;
+    --light-saturation: 0%;
+    --light-lightness: 100%;
+    --color-default: #212529;
+    --color-secondary: #37373f;
+    --color-tertiary: #7f7f90;
+    --color-light-grey: #eee;
+}
+
+/* Toggle the visibility of the sun and moon icons based on checkbox state */
+.mode-toggle .light {
+    display: none;
+}
+
+#mode:checked + .mode-toggle .dark {
+    display: none;
+}

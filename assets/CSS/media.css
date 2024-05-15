@@ -1,0 +1,98 @@
+    /* !####### container !####### */
+
+    @media screen and (min-width: 1400px) {
+        .container{
+            max-width: 1320px;
+        }
+    }
+
+
+@media screen and (max-width: 1400px) {
+        .container{
+            max-width: 1140px;
+            
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .container{
+            max-width: 960px;
+        }
+    }
+
+
+    @media screen and (max-width: 992px) {
+        .container{
+            max-width: 720px;
+            
+        }
+        
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .container{
+            max-width: 540px;
+            
+        }
+        
+    }
+
+
+    @media screen and (max-width: 576px) {
+        .container{
+            padding-inline:15px ;
+            
+        }
+        
+    }
+
+
+    /* !####### Root !####### */
+    :root{
+        font-size: 14px;
+    }
+
+
+
+
+    /* !####### Header !####### */
+
+    @media screen and (min-width: 1200px){
+        header .container{
+            min-height: 100vh;
+        }
+    }
+
+
+    
+    @media screen and (max-width: 992px){
+        header .container{
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+
+        header .container > * {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .container .header-content{
+            margin-top: 30px;
+        }
+        
+        header .btn-main {
+            --border-radius:100vh;  
+        }
+    }
+
+
+    @media screen and (max-width: 400px) {
+        header .buttons-group{
+        flex-direction: column;
+        }
+    }
